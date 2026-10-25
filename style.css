@@ -97,10 +97,9 @@ body{
 .hero__ctaBtn{
     width: 264px;
     height: 68px;
-    padding-top: 20px;
-    padding-right: 35px;
-    padding-bottom: 20px;
-    padding-left: 35px;
+        display: flex;
+    align-items:center;
+justify-content: center;
     gap: 10px;
     
     
@@ -170,6 +169,9 @@ mark{
     justify-content: space-between;
     border-radius: 45px;
     padding: 50px;
+    border: 1px solid #191A23;
+    box-shadow: 0px 5px 0px 0px #191A23;
+
 }
 .serviceCard--white{
     background: #F3F3F3;
@@ -194,6 +196,9 @@ mark{
 .serviceCard--green mark, .serviceCard--black mark{
     background: #FFFFFF;
 }
+.idkwhy mark{
+    background:#B9FF66 !important;
+}
 .serviceCard__link{
     display: flex;
     align-items: center;
@@ -202,6 +207,7 @@ mark{
 .serviceCard--black .serviceCard__learnMore{
     color: #FFFFFF;
 }
+
 .serviceCard__learnMore{
     
     font-weight: 400;
@@ -213,9 +219,54 @@ mark{
     width: 210px;
 }
 .ctaSection{
-    
+    height: 394px;
+    padding: 23.5px 100px;
+    margin-top: 100px;
 }
 .ctaSection__inner{
-    padding-block: 23.5px;
+    display: flex;
+    max-width: 1240px;
+    width: calc(1240 / 1440 * 100dvw);
+    height: 347px;
+    
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 45px;
+    justify-content: left;
+    background: #F3F3F3;
 
 }
+.ctaContent{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin: 60px 0px 60px 60px;
+}
+.ctaContent__title{
+
+font-weight: 500;
+font-size: 30px;
+
+}
+.ctaContent__text{
+
+font-weight: 400;
+
+font-size: 18px;
+
+
+}
+.ctaContent__btn{
+    width: 288px;
+    height: 68px;
+        display: flex;
+    align-items:center;
+justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    
+    border-radius: 14px;
+    background: #191A23;
+    color: #fff;
+}
+
